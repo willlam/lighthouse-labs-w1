@@ -7,6 +7,7 @@
 //
 
 #import "Patient.h"
+#import "Doctor.h"
 
 @implementation Patient
 
@@ -25,6 +26,9 @@
   return self;
 }
 
+-(NSString *)requestMedication:(Patient*)aPatient {
+  
+}
 
 
 @end

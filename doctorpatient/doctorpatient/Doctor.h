@@ -20,4 +20,6 @@
 
 -(BOOL)visitWithPatient:(Patient*)aPatient;
 
+-(NSString *)requestMedication:(Patient*)aPatient forSymptoms:(NSString*)symptoms;
+
 @end

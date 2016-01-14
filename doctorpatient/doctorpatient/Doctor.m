@@ -33,6 +33,19 @@
   
 }
 
+-(BOOL)previouslyTreated:(Patient*)aPatient {
+  return [self.patientList containsObject:aPatient];
+}
+
+-(NSString *)requestMedication:(Patient*)aPatient forSymptoms:(NSString*)symptoms {
+  if (![self previouslyTreated:aPatient]) {
+    return nil; // if patient has not been treated, we won't prescribe anything as per user story
+  }
+  if ([symptoms isEqualToString:@"headache"]) {
+    return @"advil";
+  }
+  return @"medical marijuana for you!";
+}
 
 
 @end
