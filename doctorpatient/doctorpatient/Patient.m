@@ -26,9 +26,9 @@
   return self;
 }
 
--(NSString *)requestMedication:(Patient*)aPatient {
-  
+-(NSMutableArray *)prescriptionArray:(Patient*)aPatientPrescription {
+  [self.prescriptionArray addObject:aPatientPrescription];
+  return
 }
-
 
 @end

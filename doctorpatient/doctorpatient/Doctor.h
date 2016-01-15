@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSString *specialization;
 @property (nonatomic, strong) NSMutableArray *patientList;
 
+
 -(instancetype)initWith:(NSString *)name andSpecialization:(NSString *)specialization;
 
 -(BOOL)visitWithPatient:(Patient*)aPatient;

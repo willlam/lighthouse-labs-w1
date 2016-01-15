@@ -19,6 +19,7 @@
     _name = name;
     _specialization = specialization;
     _patientList = [[NSMutableArray alloc]init];
+    _prescriptionArray = [[NSMutableArray alloc]init];
   }
   return self;
 }
