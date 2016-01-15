@@ -27,8 +27,8 @@
     newSize = Large;
   }
 
-  if ([self.delegate respondsToSelector:@selector(kitchenDidMakePizza:(Pizza *)Pizza]) {
-    [(self.delegate kitchenDidMakePizza:(Pizza *)pizza )]
+  if ([self.delegate respondsToSelector:@selector(kitchenDidMakePizza:)]) {
+    [self.delegate kitchenDidMakePizza:newPizza];
   }
   
   
